@@ -1,0 +1,31 @@
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.exe.config
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.exe
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.pdb
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csprojAssemblyReference.cache
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры_2.Form1.resources
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры_2.Properties.Resources.resources
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.GenerateResource.cache
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.CoreCompileInputs.cache
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.exe
+G:\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.pdb
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.exe.config
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.exe
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.pdb
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csprojAssemblyReference.cache
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры_2.Form1.resources
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры_2.Properties.Resources.resources
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.GenerateResource.cache
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.CoreCompileInputs.cache
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.exe
+G:\Прошлое\2 курс 1 сем\ООП\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.pdb
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.exe.config
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.exe
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.pdb
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.AssemblyReference.cache
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.SuggestedBindingRedirects.cache
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры_2.Form1.resources
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры_2.Properties.Resources.resources
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.GenerateResource.cache
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.CoreCompileInputs.cache
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.exe
+D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.pdb

@@ -74,7 +74,7 @@ namespace Фигуры_2
             if (creator == null && obj != null)
             {
                 obj.fillcolor = colorDialog1.Color;
-                
+                 
             }
         }
 

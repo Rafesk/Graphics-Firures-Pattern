@@ -10,7 +10,7 @@ namespace Фигуры_2
     [Serializable]
     class Rectangle : Figure
     {
-        private Rectangle(int x, int y, int w, int h, Color fillcolor, Color linecolor) : base(x, y, w, h, fillcolor, linecolor) { }
+        public Rectangle(int x, int y, int w, int h, Color fillcolor, Color linecolor) : base(x, y, w, h, fillcolor, linecolor) { }
         public override void Draw(Graphics g)
         {
             g.FillRectangle(new SolidBrush(fillcolor), x, y, w, h);

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="CornerStrategy.cs" />
     <Compile Include="Creator.cs" />
+    <Compile Include="GroupFigure.cs" />
     <Compile Include="Manipulator.cs" />
     <Compile Include="Фигуры\Ellipse.cs" />
     <Compile Include="Фигуры\Figure.cs" />

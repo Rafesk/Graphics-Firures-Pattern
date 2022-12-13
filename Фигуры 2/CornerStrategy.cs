@@ -34,8 +34,8 @@ namespace Фигуры_2
 
         public override void Execute(Figure f, int dx, int dy)
         {
-            f.Location(0, dy);
-            f.Resize(dx, 0);
+            f.Location(dx, 0);
+            f.Resize(dx, dy);
         }
     }
     internal class UpRightCorner : CornerStrategy

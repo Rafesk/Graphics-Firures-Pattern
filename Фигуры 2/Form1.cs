@@ -14,6 +14,7 @@ namespace Фигуры_2
     {
         Creator creator;
         MFigures figures = new MFigures();
+        Manipulator manipulator = new Manipulator();
         int x1, y1;
         Figure obj;
         bool down = false;
@@ -41,6 +42,7 @@ namespace Фигуры_2
             {
                 f.Draw(e.Graphics);
             }
+            manipulator.Draw(e.Graphics);
         }
 
 
@@ -50,10 +52,7 @@ namespace Фигуры_2
             {
                 if (creator == null)
                 {
-                    if (obj != null)
-                    {
-                        obj.Location(e.X, e.Y);
-                    }
+                    manipulator.Drag(e.X, e.Y);
                 }
                 else
                 {
@@ -88,13 +87,20 @@ namespace Фигуры_2
             {
                 obj = creator.ModelCreator(x1, y1, 1, 1, colorDialog1.Color, Color.Black);
                 figures.AddFigure(obj);
+                
+
             }
             else
             {
-                obj = figures.Hit(x1, y1);
+                if (!manipulator.IsIn(x1, y1))
+                {
+                    manipulator.SetFigure(figures.Hit(x1, y1));
+                    if (figures.Hit(x1, y1) != null) { figures.Hit(x1, y1).NACH(x1, y1); }
+                }
+                
             }
-
             down = true;
+
         }
 
         private void button6_Click(object sender, EventArgs e)//сохранить
@@ -123,6 +129,12 @@ namespace Фигуры_2
             figures.RemoveFigure(obj);
             figures.RemoveFigure(figures.mfigures[figures.mfigures.Count - 1]);
             obj = null;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (figures.Hit(x1, y1)== null) { return; }
+            figures.AddFigure(figures.Hit(x1, y1).Clone());
         }
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)

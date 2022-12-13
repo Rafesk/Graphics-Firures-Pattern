@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CornerStrategy.cs" />
     <Compile Include="Creator.cs" />
     <Compile Include="Manipulator.cs" />
     <Compile Include="Фигуры\Ellipse.cs" />

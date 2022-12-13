@@ -29,3 +29,14 @@ D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигу�
 D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.CoreCompileInputs.cache
 D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.exe
 D:\work and study\универ\ПАК ПС\Фигуры2\Фигуры2\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.pdb
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.exe.config
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.exe
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\bin\Debug\Фигуры 2.pdb
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.AssemblyReference.cache
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.SuggestedBindingRedirects.cache
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\obj\Debug\Фигуры_2.Form1.resources
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\obj\Debug\Фигуры_2.Properties.Resources.resources
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.GenerateResource.cache
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.csproj.CoreCompileInputs.cache
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.exe
+D:\work and study\uni\PAC PC\Фигуры 2\Фигуры 2\obj\Debug\Фигуры 2.pdb

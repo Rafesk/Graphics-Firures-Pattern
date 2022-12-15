@@ -20,10 +20,6 @@ namespace Фигуры_2
 
         [NonSerialized]
         public bool choice = false;
-        public int deltX = 0;
-        public int deltY = 0;
-        public int xN = 0;
-        public int yN = 0;
         public Figure() { }
         public Figure(int x, int y, int w, int h, Color fillcolor, Color linecolor)
         {
@@ -34,26 +30,15 @@ namespace Фигуры_2
             this.fillcolor = fillcolor;
             this.linecolor = linecolor;        
         }
-        public void DELT(int x, int y)
+        public virtual void Resize(int x,int y)
         {
-            deltX = x-this.x;
-            deltY = y-this.y;
+            w += x;
+            h += y;
         }
-        public void NACH(int x, int y)
+        public virtual void Location(int x,int y)
         {
-            DELT(x, y);
-            xN = x;
-            yN = y;
-        }
-        public void Resize(int x,int y)
-        {
-            w = x - this.x;
-            h = y - this.y;
-        }
-        public void Location(int x,int y)
-        {
-            this.x = x-deltX;
-            this.y = y-deltY;
+            this.x += x;
+            this.y += y;
         }
         public abstract bool IsIn(int x, int y);
         public abstract void Draw(Graphics g);

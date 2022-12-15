@@ -13,6 +13,8 @@ namespace Фигуры_2
         Figure fig;
         Action<Figure,int,int> activeStrategy;
         CornerStrategy[] masfig = new CornerStrategy[4];
+        public bool IsEmpty() => fig == null;
+        
         public Manipulator()
         {
             fillcolor= linecolor = Color.Red;
@@ -63,7 +65,6 @@ namespace Фигуры_2
         public void Location(int x, int y)
         {
             fig.Location(x, y);
-
             Update();
 
             /*
@@ -73,15 +74,18 @@ namespace Фигуры_2
 
         private void Update()
         {
-            masfig[0].Location(fig.x - 30, fig.y - 30);
-            masfig[1].Location(fig.x + fig.w, fig.y - 30);
-            masfig[2].Location(fig.x + fig.w, fig.y + fig.h);
-            masfig[3].Location(fig.x - 30, fig.y + fig.h);
-
             x = fig.x;
             y = fig.y;
             w = fig.w;
             h = fig.h;
+            masfig[0].x = x - 30;
+            masfig[0].y = y - 30;
+            masfig[1].x = x + w; 
+            masfig[1].y = y - 30;
+            masfig[2].x = x + w;
+            masfig[2].y = y + h;
+            masfig[3].x = x - 30;
+            masfig[3].y = y + h;
         }
         public void Resize(int x, int y)
         {
@@ -116,6 +120,14 @@ namespace Фигуры_2
         public void MoveStrategy(Figure f, int dx, int dy)
         {
             f.Location(dx, dy);
+        }
+
+        public void Clear() { fig = null; }
+
+        public override Figure Clone()
+        {
+            return fig.Clone();
+
         }
     }
 }

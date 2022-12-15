@@ -17,7 +17,7 @@ namespace Фигуры_2
         Manipulator manipulator = new Manipulator();
         int x1, y1;
         Figure obj;
-        GroupFigure group = new GroupFigure(0,0,0,0, Color.Transparent, Color.Transparent);
+        GroupFigure group = new GroupFigure(0, 0, 0, 0, Color.Transparent, Color.Transparent);
         bool down = false;
         Dictionary<string, Creator> creators = new Dictionary<string, Creator>();
 
@@ -28,7 +28,6 @@ namespace Фигуры_2
             creators.Add("Rectangle", new Rectangle.CreateRectangle());
             creators.Add("Ellipse", new Ellipse.CreateEllipse());
             creators.Add("Triangle", new Triangle.CreateTriangle());
-            creators.Add("Group", new GroupFigure.CreateGroup());
             creators.Add("Select", null);
         }
 
@@ -53,15 +52,13 @@ namespace Фигуры_2
             {
                 if (creator == null)
                 {
-                    manipulator.Drag(e.X, e.Y);
+                    manipulator.Drag(e.X-x1, e.Y-y1);
                 }
-                else
-                {
-                    obj.Resize(e.X, e.Y);
-                }
-                Refresh();
+                
             }
-
+            Refresh();
+            x1 = e.X;
+            y1 = e.Y;
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
@@ -70,37 +67,37 @@ namespace Фигуры_2
             y1 = e.Y;
             if (creator != null)
             {
-                obj = creator.ModelCreator(x1, y1, 1, 1, colorDialog1.Color, Color.Black);
-                if (creator is GroupFigure.CreateGroup) figures.AddFigure(group);
-                else figures.AddFigure(obj);
-                
-
+                obj = creator.ModelCreator(x1, y1, 50, 50, colorDialog1.Color, Color.Black);
+                figures.AddFigure(obj);
             }
             else
             {
                 if (!manipulator.IsIn(x1, y1))
                 {
-                    manipulator.SetFigure(figures.Hit(x1, y1));
-                    if (figures.Hit(x1, y1) != null) { figures.Hit(x1, y1).NACH(x1, y1); }
+                    var tmp = figures.Hit(x1, y1);
+                    if (e.Button == MouseButtons.Right)
+                    {
+                        group.AddFigure(tmp);
+                        manipulator.SetFigure(group);
+                    }
+                    else
+                    {
+                        manipulator.SetFigure(tmp);
+                        group.Clear();
+                        //manipulator.Clear();
+                    }
                 }
                 
+
             }
             down = true;
 
-        } 
+        }
 
         private void button9_Click(object sender, EventArgs e)//копировать
         {
-            if (figures.Hit(x1, y1)== null) { return; }
-            figures.AddFigure(figures.Hit(x1, y1).Clone());
-        }
-
-        private void button6_Click(object sender, EventArgs e)//добавить в группу
-        {
-            if(creator == null && figures.Hit(x1, y1) != null)
-            {
-                group.AddFigure(figures.Hit(x1, y1).Clone());
-            }
+            if (manipulator.IsEmpty()) { return; }
+            figures.AddFigure(manipulator.Clone());
         }
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)

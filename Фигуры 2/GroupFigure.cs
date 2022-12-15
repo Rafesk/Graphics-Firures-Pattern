@@ -38,13 +38,33 @@ namespace Фигуры_2
             {
                 if (figure.x < minX) minX = figure.x;
                 if (figure.y < minY) minY = figure.y;
-                if (figure.x+figure.w > maxXW) maxXW = figure.x+figure.w;
-                if (figure.y+figure.h > maxYH) maxYH = figure.y+ figure.h;
+                if (figure.x > maxXW) maxXW = figure.x;
+                if (figure.y > maxYH) maxYH = figure.y;
             }
             x = minX;
             y = minY;
             w = maxXW;
             h = maxYH;
+        }
+        public void Clear()
+        {
+            figures.Clear();
+        }
+        public override void Resize(int x, int y)
+        {
+            foreach (Figure fig in figures)
+            {
+                fig.Resize(x, y);
+            }
+            LocationAndResize();
+        }
+        public override void Location(int x, int y)
+        {
+            foreach (Figure fig in figures)
+            {
+                fig.Location(x, y);
+            }
+            LocationAndResize();
         }
 
         public override bool IsIn(int x, int y)
